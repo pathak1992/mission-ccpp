@@ -1,0 +1,77 @@
+														  	                                  GitHub
+Step 1 -
+		Make one Branch in Github
+		git clone url
+			or
+		if you clone first and add branch later then just pull to update the repository locally	
+		Go to that folder 
+		by  
+			cd Foldername
+and then
+		git pull origin
+	
+
+Step 2 -
+	First check in which branch you are working
+	git branch -a
+
+
+	select specific branch use command
+	git checkout branchname
+
+	
+	 Use 	
+	git pull origin 
+	
+	to pull the updated Branch Data..
+
+Step 3 -
+	
+	Add Some files in that folder or make necessary changes in in code
+
+	then 
+	To check the data which is not updated in repository use 
+		git status  
+	  
+	then you have to add that file or folder so use
+			git add . 
+			. means everything
+
+	to check whether the files are added or not use 
+			git status
+
+Step 4 -
+		to commit changes use command	
+			git commit -m “Necessary Comment”
+		
+	then use
+		push command to load the data in Repository
+		
+		git push -u origin branchname
+
+
+Step 5 -
+		if branch is final and no changes are required in that branch then merge branch to main
+		git checkout main 
+		
+		git branch -a
+		
+
+		then use
+
+		git merge branchname                          - - - - - the branch to be merge in main 
+
+		git push -u origin main
+
+step 6 -
+	 To delete branch 
+			git branch -d branchname		//deleted from locally repository referance
+			
+			git push -u origin  —delete branchname		//delete from repository
+			
+		To Confirm the branch is deleted or not
+			git branch -a
+ 
+	
+		
+		

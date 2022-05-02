@@ -1,0 +1,76 @@
+			Amazon Web Services 
+
+step 1 - 
+		Login 1st
+		
+		Select Use EC2 Instance
+
+		Launch Instance ->Ubuntu	->search->select 64bit x86 ->select free  tier then 
+review and launch ->launch
+	create new Key pair  or use existing one
+	Launch instance
+
+	then select on ID generated in instance
+	waiting for running the server
+after running 
+
+	select on instance
+	
+	then go to security tab
+	-> then go to Security group link
+
+then Edit inbound Rule
+	
+	Add rule in that select type = All trafic
+	an Source type = Anywhere IPv4
+	Save Rules
+
+	then go to Ec2 Instance ->instance(running)
+	
+	select instance and Connect the Server
+		then connect ..
+then you are in Ubuntu Terminal 
+
+step 2 - To update the terminal use
+		sudo apt update
+
+then check whether git is installed or not in you Terminal
+	git -v
+	
+	git clone url
+	
+	if your git is Private then type username = (Github Username) 
+	in password you have to create the token
+	for creating the token
+		
+		Go to Github Account Setting
+		->select developer Setting ->Personal access tokens -> Generate new Token ->provide token note and select all the scopes and set Expiration 
+	  
+	password = token created
+
+then use command
+	docker -v 
+then install docker
+	sudo apt install docker.io
+	
+
+step3 -
+	sudo systemctl start docker	// to start the docker
+	sudo systemctl status docker	// check docker status
+	sudo systemctl enable docker	
+	
+step 4 -
+	cd RepoName 
+	cd mynodeapp 
+	sudo docker build -t foldername  .	// to run the server
+
+	sudo docker run -d -p 8081:8081 foldername  	/ /to run the
+	
+sudo docker ps
+	
+	then use google url and go to instance  copy public ip Address 
+then in url 
+	use that public ip adreess for eg - 13.126.121.138:8081
+
+to stop the Running Container use command
+	sudo docker stop Containerid   for eg -a6696eeac345

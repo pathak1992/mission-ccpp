@@ -1,0 +1,27 @@
+jenkins  ----> http://localhost:8080 (is the login IP)
+
+new item ->
+give some name
+free style project
+general 
+Github project tick then paste url
+in source code management 
+check Git radiobutton
+Repositories
+paste git url again.
+branch specifier write main there.
+tick Github hook trigger for GITScm polling.
+Build Execute Windows batch Command  
+in command box write : npm install express(model needed / model specific)
+again build execute Windows batch command 
+in command box write : node server.js
+
+Save 
+go to dashboard 
+select project -> build 
+#1 click -> console output.
+
+
+run server on 8081
+
+task manager -> close the node instance to close the running server connection
